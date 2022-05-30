@@ -32,4 +32,9 @@ https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.36.0.3/sqlite-jdbc-3.36.
 
 dicho archivo contiene una base de datos preestablecida para ver el funcionamiento del juego como se ve en los siguientes videos
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KxAMBd0P3Io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* Eliminar Pregunta (`https://youtu.be/rXGV3ngbbuE`)
+* Demo Juego perdiendo (`https://youtu.be/ulfBG8dGGlE`)
+* Demo Juego con Guardado de puntaje (`https://youtu.be/KxAMBd0P3Io`)
+* Demo Cambio de nombre (`https://youtu.be/SllQ4Ww2TRQ`)
+* Buscar Pregunta (`https://youtu.be/W_XfzorVaHs`)
+* Agregar Pregunta (`https://youtu.be/sc51iHK8VAw`)
