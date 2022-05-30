@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="447.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="recursos.GUI.ProgramaGUIController">
+   <children>
+      <TabPane layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="447.0" prefWidth="681.0" style="-fx-background-color: black;" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Jugar">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: Black;">
+                     <children>
+                        <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="408.0" prefWidth="672.0" style="-fx-background-color: Black;">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <children>
+                              <Label fx:id="PreguntaLabel" layoutX="89.0" layoutY="50.0" prefHeight="55.0" prefWidth="495.0" text="Pregunta" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+                                 <font>
+                                    <Font name="Consolas" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="RespuestaCBtn" layoutX="89.0" layoutY="264.0" mnemonicParsing="false" onAction="#RespuestaCBtnOnAction" prefHeight="130.0" prefWidth="220.0" style="-fx-background-color: paleturquoise;" text="Respuesta C" wrapText="true">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Button>
+                              <Button fx:id="RespuestaDBtn" layoutX="363.0" layoutY="264.0" mnemonicParsing="false" onAction="#RespuestaDBtnOnAction" prefHeight="130.0" prefWidth="220.0" style="-fx-background-color: paleturquoise;" text="Respuesta D" wrapText="true">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="RespuestaABtn" layoutX="89.0" layoutY="112.0" mnemonicParsing="false" onAction="#RespuestaABtnOnAction" prefHeight="130.0" prefWidth="220.0" style="-fx-background-color: paleturquoise;" text="Respuesta A" wrapText="true">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="RespuestaBBtn" layoutX="363.0" layoutY="112.0" mnemonicParsing="false" onAction="#RespuestaBBtnOnAction" prefHeight="130.0" prefWidth="220.0" style="-fx-background-color: paleturquoise;" text="Respuesta B" wrapText="true">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Label layoutX="14.0" layoutY="8.0" prefHeight="22.0" prefWidth="105.0" text="Acomulado:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="AcomuladoLabel" layoutX="119.0" layoutY="8.0" prefHeight="19.0" prefWidth="86.0" text="00" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="FinalizarJuegoBtn" layoutX="513.0" layoutY="12.0" mnemonicParsing="false" onAction="#FinalizarJuegoBtnOnAction" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: paleturquoise;" text="Finalizar Juego">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="IniciarJuegoBtn" layoutX="513.0" layoutY="12.0" mnemonicParsing="false" onAction="#IniciarJuegoBtnOnAction" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: paleturquoise;" text="Iniciar Juego">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Label fx:id="NombreLabel" layoutX="207.0" layoutY="8.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+         </Tab>
+         <Tab style="fx-background-color: paleturquoise;" text="Historico">
+            <content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutY="-2.0" prefHeight="410.0" prefWidth="672.0">
+                           <children>
+                              <Button fx:id="ObtenerDatosBtn" layoutX="248.0" layoutY="365.0" mnemonicParsing="false" onAction="#ObtenerDatosBtnOnAction" prefHeight="39.0" prefWidth="152.0" style="-fx-background-color: paleturquoise;" text="Obtener datos">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Button>
+                              <TextArea fx:id="ObtenerDatosTextArea" editable="false" layoutX="7.0" layoutY="14.0" prefHeight="346.0" prefWidth="658.0" promptText="Esperando... obtener datos">
+                                 <font>
+                                    <Font name="Consolas" size="18.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+         </Tab>
+            <Tab style="fx-background-color: paleturquoise;" text="Configurar Juego">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="408.0" prefWidth="671.0">
+                           <children>
+                              <Button fx:id="BuscarBtn" layoutX="458.0" layoutY="49.0" mnemonicParsing="false" onAction="#BuscarBtnOnAction" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: paleturquoise;" text="Buscar">
+                                 <font>
+                                    <Font name="Consolas" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Label layoutX="16.0" layoutY="22.0" text="Buscar Pregunta" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="127.0" text="Datos de las Preguntas:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="18.0" layoutY="165.0" text="Pregunta" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="236.0" layoutY="165.0" text="Respuesta correcta" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="460.0" layoutY="165.0" text="Respuesta incorrecta 1" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="18.0" layoutY="252.0" text="Respuesta incorrecta 2" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="239.0" layoutY="252.0" text="Respuesta incorrecta 3" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="457.0" layoutY="252.0" text="Categoria" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="PrguntaEditTextField" layoutX="16.0" layoutY="190.0" prefHeight="50.0" prefWidth="200.0" promptText="Pregunta" />
+                              <TextField fx:id="CategoriaEditTextField" layoutX="457.0" layoutY="274.0" prefHeight="50.0" prefWidth="200.0" promptText="Categoria" />
+                              <TextField fx:id="RespuestaIncorrecta3TextField" layoutX="236.0" layoutY="274.0" prefHeight="50.0" prefWidth="200.0" promptText="Respuesta incorrecta 3" />
+                              <TextField fx:id="RespuestaIncorrecta2TextField" layoutX="16.0" layoutY="274.0" prefHeight="50.0" prefWidth="200.0" promptText="Respuesta incorrecta 2" />
+                              <TextField fx:id="RespuestaCorrectaTextField" layoutX="236.0" layoutY="190.0" prefHeight="50.0" prefWidth="200.0" promptText="Respuesta correcta" />
+                              <TextField fx:id="RespuestaIncorrecta1TextField" layoutX="457.0" layoutY="190.0" prefHeight="50.0" prefWidth="200.0" promptText="Respuesta incorrecta 1" />
+                              <Button fx:id="EliminarBtn" layoutX="169.0" layoutY="349.0" mnemonicParsing="false" onAction="#EliminarBtnOnAction" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: paleturquoise;" text="Eliminar">
+                                 <font>
+                                    <Font name="Consolas" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="AgregarBtn" layoutX="18.0" layoutY="349.0" mnemonicParsing="false" onAction="#AgregarBtnOnAction" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: paleturquoise;" text="Agregar">
+                                 <font>
+                                    <Font name="Consolas" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <ComboBox fx:id="CategoriaComboBox" layoutX="17.0" layoutY="53.0" onAction="#CategoriaComboBoxOnCategoria" prefHeight="51.0" prefWidth="192.0" promptText="Categoria" />
+                              <ComboBox fx:id="PreguntaComboBox" layoutX="236.0" layoutY="51.0" prefHeight="55.0" prefWidth="197.0" promptText="Pregunta" />
+                              <Button fx:id="CargarCategoriasBtn" layoutX="458.0" layoutY="49.0" mnemonicParsing="false" onAction="#CargarCategoriasBtnOnAction" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: paleturquoise;" text="Cargar Categorias" wrapText="true">
+                                 <font>
+                                    <Font name="Consolas" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="fx-background-color: paleturquoise;" text="Reglas">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutY="-2.0" prefHeight="409.0" prefWidth="668.0">
+                           <children>
+                              <Label layoutX="144.0" layoutY="5.0" text="Concurso de preguntas y respuestas" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="19.0" layoutY="23.0" text="Reglas:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="19.0" layoutY="50.0" text="1) Se realizarán 5 rondas" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="19.0" layoutY="68.0" text="2) Cada que se avance la dificultad aumentara" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="19.0" layoutY="86.0" text="3) Se puede abandonar desde la 2 ronda para asegurar premio" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="19.0" layoutY="86.0" prefHeight="93.0" prefWidth="483.0" text="4) Su resultado se guardará con su nombre ingresado al empezar el juego (no es modificable durante el juego o al finalizarlo)" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="21.0" layoutY="151.0" prefHeight="93.0" prefWidth="483.0" text="5) Se tiene una base de datos con mínimo 25 preguntas dichas están repartidas en las diferentes categorías/niveles" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="19.0" layoutY="228.0" prefHeight="51.0" prefWidth="531.0" text="6) Al escoger una de las preguntas incorrectas perderá instantáneamente y se guardará su puntaje" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="23.0" layoutY="279.0" text="7) Si realiza otro intento con el mismo nombre no lo dejará jugar" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="21.0" layoutY="279.0" prefHeight="93.0" prefWidth="483.0" text="8) Si abandona el juego en medio de la partida su avance no se guardara, ni su puntaje" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="21.0" layoutY="368.0" prefHeight="33.0" prefWidth="483.0" text="10) no se estrese y disfrute" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="21.0" layoutY="333.0" prefHeight="51.0" prefWidth="531.0" text="9) Los premios son simbólicos" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Consolas" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </TabPane>
+   </children>
+</AnchorPane>
